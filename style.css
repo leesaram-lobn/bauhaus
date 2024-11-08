@@ -1,0 +1,118 @@
+/* 전체 설정 지정 */
+*{margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;}
+    /* 폰트 추가 */
+    @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+    /* 버튼 */
+/* ul{ background-color: #DDE3EB; }
+li{ color: white;} */
+    /* 기본 type 스타일 */
+.font_b_00{font-family: "NanumSquare", sans-serif;font-weight: 800;font-size: 60px;letter-spacing: -0.5px;line-height: 52px;color: #ff0000;}
+.font_b_01{font-family: "NanumSquare", sans-serif;font-weight: 800;font-size: 40px;letter-spacing: -0.5px;line-height: 52px;color: #ffe100;}
+.font_b_02{font-family: "NanumSquare", sans-serif;font-weight: 700;font-size: 31px;letter-spacing: -0.5px;line-height: 35px;color: #00ff6a;}
+.font_b_03{font-family: "NanumSquare", sans-serif;font-weight: 700;font-size: 19px;letter-spacing: -0.5px;line-height: 37px;color: #00d9ff;}
+.font_b_04{font-family: "NanumSquare", sans-serif;font-weight: 700;font-size: 16px;letter-spacing: -0.5px;line-height: 20px;color: #001eff;}
+.font_b_05{font-family: "NanumSquare", sans-serif;font-weight: 700;font-size: 13px;letter-spacing: -0.5px;line-height: 20px;color: #e100ff;}
+/* 테이블 적용 type 스타일 */
+.font_t_01{font-family: "NanumSquare", serif;font-weight: 400;font-size: 75px;letter-spacing: -0.5px;line-height: 120px;color: #6d6d6d;}
+.font_t_02{font-family: "NanumSquare", sans-serif;font-weight: 400;font-size: 25px;letter-spacing: -0.5px;line-height: 36px;color: #6d6d6d;}
+.font_t_03{font-family: "NanumSquare", sans-serif;font-weight: 400;font-size: 18px;letter-spacing: -0.5px;line-height: 26px;color: #6d6d6d;}
+
+/* 푸터 적용 type 스타일 */
+.font_f_01{font-family: "NanumSquare", sans-serif;font-weight: 300;font-size: 20px;letter-spacing: -0.5px;line-height: 29px;color: #ffffff;}
+.font_f_02{font-family: "NanumSquare", sans-serif;font-weight: 300;font-size: 16px;letter-spacing: -0.5px;line-height: 31px;color: #ffffff;}
+
+
+/* 가로 폭이 100%로 유지되면서 콘텐츠 단위 가장 큰 묶음인 block의 스타일 */
+.block{height: 377px;background-color: #001eff; background-position: center;background-repeat: no-repeat;}
+/* .block0{height: 9022px;background-color: #001eff; background-position: center;background-repeat: no-repeat;} */
+/* 그라데이션 위에 사진 놓기가 왜이렇게 어렵죠... 그냥 색 배경 위에 사진 올리는것과 같지 않은 */
+.block00{height: 697px;
+    background: linear-gradient(to bottom, #84B0F7, #32455F); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;}
+.block000{height: 697px; background-image: url(img/c1.png);background-position: center;background-repeat: no-repeat; max-width: 100%; /* 이미지 크기 조정 */
+    max-height: 100%; /* 이미지 크기 조정 */position: absolute; /* 절대 위치 지정 */
+    z-index: 1; /* 이미지가 배경 위에 오도록 설정 */}
+.block01{width: 620px;margin: 0 auto;padding-top: 86px;}
+.block02{padding-top: 129px;}
+.block03{padding-top: 129px;}
+.block04{padding-top: 129px;}
+
+/* 1000px의 가로 폭을 유지하면서 중앙에 정렬하기 위한 margin: 0 auto를 적용하는 항목들을 여기서 정리합니다. */
+.centerbox00{width: 1000px;height: 460px;margin: 0 auto;position: relative;}
+.centerbox03{width: 1000px;height: 485px;margin: 0 auto;position: relative;border-left: 2px solid #575757;border-right: 2px solid #575757;}
+.centerbox_fo{width: 1000px;height: 219px;margin: 0 auto;padding-top: 115px;}
+
+/* 타이틀 영역의 스타일을 여기서 정리합니다. */
+.tit00{width: 928px;height:206px;background-color: white;position: absolute;left: 37px;top: 50px;}
+.tit01{width: 620px;height: 154px;background-image: url(img/titbg01.png);position: relative;}
+.tit02{width: 240px;height: 240px;background-image: url(img/titbg02.png);position: relative;margin: 0 auto;}
+.tit03{width: 240px;height: 240px;background-image: url(img/titbg02.png);position: relative;margin: 0 auto;}
+.tit04{width: 240px;height: 240px;background-image: url(img/titbg02.png);position: relative;margin: 0 auto;}
+
+/* 타이틀 영역의 배경과는 별도로 안쪽으로 텍스트를 효과적으로 배치하기 위해 아래와 같이 스타일을 구성합니다. */
+.txt00{position: absolute;left: 17.5px;top: 9px;}
+.txt01a{position: absolute;width: 620px;text-align: center;padding-top: 46px;}
+.txt01b{position: relative;margin: 0 auto;width: 553px;padding-top: 27px;}
+.txt02{position: relative;margin: 0 auto;width: 140px;padding-top: 62px;text-align: center;}
+.txt03{position: relative;margin: 0 auto;width: 140px;padding-top: 79px;text-align: center;}
+.txt04{position: relative;margin: 0 auto;width: 140px;padding-top: 50px;text-align: center;}
+
+/* block단위 항목의 안쪽에 텍스트나 이미지를 구성하기 위한 항목을 cont라는 이름으로 정리하여 스타일을 구성합니다. */
+.cont01{width: 620px;height: 972px;margin: 0 auto;background-image: url(img/pic01.png);}
+.cont02a{width: 1000px;margin: 0 auto;padding-top: 77px;}
+.cont02b{width: 100%;height: 659px;position: relative;background-image: url(img/bg01.png);text-align: center;}
+.cont02b > img{padding-top: 26px;}
+.cont02c{width: 1000px;margin: 0 auto;padding-top: 77px;}
+.cont03a{width: 1000px;margin: 0 auto;padding-top: 116px;}
+.cont03b{width: 100%;margin-top: 44px;}
+.cont03c{width: 1000px;margin: 0 auto;padding-top: 88px;}
+.cont03d{width: 1000px;height: 650px;margin: 0 auto;background-image: url(img/pic08.png);background-position: center;background-repeat: no-repeat;padding-top: 64px;position: relative;}
+.cont04a{width: 1000px;margin: 0 auto;padding-top: 128px;}
+.cont04b{width: 1000px;height: 608px;margin: 0 auto;background-image: url(img/pic09.png);background-position: center;background-repeat: no-repeat;padding-top: 57px;position: relative;}
+
+/* 표짜기를 하는 형태로 div 항목을 세부적으로 정리한 항목입니다. */
+.wrap_table{width: 1000px;margin: 0 auto;padding-top: 128px;}
+
+.table03a{width: 1000px;height: 304px;position: relative;border-left: 2px solid #575757;border-right: 2px solid #575757;}
+.table03b{width: 1000px;height: 304px;position: relative;border-left: 2px solid #575757;border-right: 2px solid #575757;margin-top: 111px;}
+.table03c{width: 1000px;height: 304px;position: relative;border-left: 2px solid #575757;border-right: 2px solid #575757;margin-top: 111px;}
+.table03d{width: 1000px;height: 304px;position: relative;border-left: 2px solid #575757;border-right: 2px solid #575757;margin-top: 111px;}
+
+.td01{height: 304px;width: 261px;position: absolute;}
+.td02{height: 304px;width: 302px;position: absolute;border-left: 1px solid #575757;border-right: 1px solid #575757;left: 259px;}
+.td03{height: 304px;width: 436px;position: absolute;right: 0;}
+.td04{position: absolute;height: 485px;width: 732px;border-right: 1px solid #575757;}
+.td05{position: absolute;height: 485px;width: 268px;right: 0;}
+
+.td_txt01{width: 238px;height: 107px;position: absolute;top: 58px;text-align: right;}
+.td_txt02{width: 238px;height: 72px;position: absolute;top: 164px;text-align: right;}
+.td_txt03{width: 367px;height: 104px;position: absolute;left: 36px;}
+.td_txt05{width: 240px;height: 52px;position: absolute;bottom: 22px;right: 8px;}
+
+.td_txt03_ext01{top: 94px;}
+.td_txt03_ext02{top: 46px;}
+.td_txt03_ext03{top: 99px;}
+.td_txt03_ext04{top: 108px;}
+
+
+
+
+/* 에스펀리조트와 푸터에 노출되는 작은 박스를 구성하는 스타일입니다. */
+.red_box{width: 20px;height: 20px;position: absolute;background-color: #DD2726;right: 228px;bottom: 88px;}
+.yell_box{width: 20px;height: 20px;background-color: #FFC72A;margin: 0 auto;}
+
+/* Macintosh SE와 디터람스의 SK4 이미지 설명의 스타일입니다. */
+.capt01{width: 1000px;text-align: center;position: absolute;bottom: 48px;}
+.capt02{width: 1000px;text-align: center;position: absolute;bottom: 45px;}
+
+/* 하단 footer부문을 정리하는 스타일 입니다. */
+footer{width: 100%;height: 383px;background-color: #000000;margin-top: 92px;}
+.fo01{position: relative;padding-top: 22px;text-align: center;}
+.fo02{position: relative;padding-top: 31px;text-align: center;}
+
